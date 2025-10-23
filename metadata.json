@@ -1,0 +1,7 @@
+{
+  "name": " نبض جوار (Nabdh Jwar)06",
+  "description": "A UI mockup for 'Nabdh Jwar', a home healthcare services mobile application for Saudi Arabia, connecting patients with nurses.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
