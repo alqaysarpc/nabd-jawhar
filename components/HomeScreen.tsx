@@ -100,7 +100,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ onViewAllServices, onServiceSel
         <div className="p-4 md:p-6 lg:p-8 space-y-6 md:space-y-8">
             {/* Welcome Header */}
             <div>
-                <h1 className="text-2xl font-bold text-gray-800">أهلاً بك، عبدالله</h1>
+                <h1 className="text-2xl font-bold text-gray-800">أهلاً بك، خولة بارجاش</h1>
                 <p className="text-gray-500">كيف يمكننا خدمتك اليوم؟</p>
             </div>
             

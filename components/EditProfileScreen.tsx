@@ -8,11 +8,11 @@ interface EditProfileScreenProps {
 
 const EditProfileScreen: React.FC<EditProfileScreenProps> = ({ onBack, onSave }) => {
     const [profileData, setProfileData] = useState({
-        name: 'عبدالله محمد',
-        email: 'abdullah.m@example.com',
-        phone: '777123456',
-        dob: '1990-05-15',
-        gender: 'male',
+        name: ' خولة بارجاش',
+        email: 'khawla@gmail.com',
+        phone: '7775258830',
+        dob: '2002-09-08',
+        gender: 'female',
     });
     
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {

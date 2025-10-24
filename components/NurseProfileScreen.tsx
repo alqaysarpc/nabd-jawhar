@@ -29,11 +29,11 @@ interface DetailedNurse {
 const mockNurseProfiles: DetailedNurse[] = [
     { 
         id: 1, 
-        name: 'أحمد خالد', 
+        name: 'وليد بن قبوس ', 
         img: 'https://picsum.photos/seed/nurse1/100/100', 
         rating: 4.9, 
         reviewsCount: 120,
-        specialty: 'خدمات التمريض العامة', 
+        specialty: 'خدمات التمريض ', 
         experience: 7,
         bio: 'ممرض متخصص ذو خبرة 7 سنوات في تقديم الرعاية الصحية العامة، ملتزم بتقديم أفضل خدمة للمرضى في منازلهم.',
         services: ['إعطاء الحقن', 'قياس العلامات الحيوية', 'العناية بالجروح البسيطة', 'تركيب المغذيات'],
@@ -45,7 +45,7 @@ const mockNurseProfiles: DetailedNurse[] = [
     },
     { 
         id: 2, 
-        name: 'نورة محمد', 
+        name: 'ماريا باجبير ', 
         img: 'https://picsum.photos/seed/nurse2/100/100', 
         rating: 4.8, 
         reviewsCount: 95,
@@ -59,8 +59,8 @@ const mockNurseProfiles: DetailedNurse[] = [
             { reviewer: 'سالم', comment: 'ممرضة رائعة وصبورة.', rating: 5 },
         ]
     },
-     { id: 3, name: 'سارة عبدالله', img: 'https://picsum.photos/seed/nurse3/100/100', rating: 4.7, reviewsCount: 88, specialty: 'العناية بالجروح', experience: 6, bio: 'خبيرة في العناية بمختلف أنواع الجروح، بما في ذلك جروح ما بعد العمليات والجروح المزمنة.', services: ['تغيير الضمادات', 'تنظيف الجروح', 'متابعة الشفاء'], availability: 'available', reviews: [{reviewer: 'خالد', comment: 'اهتمام كبير بالتفاصيل.', rating: 5}] },
-    { id: 4, name: 'خالد الغامدي', img: 'https://picsum.photos/seed/nurse4/100/100', rating: 4.9, reviewsCount: 150, specialty: 'رعاية كبار السن', experience: 10, bio: 'ممرض متخصص في توفير الرعاية الشاملة والمريحة لكبار السن في بيئتهم المنزلية.', services: ['المساعدة في النظافة الشخصية', 'إدارة الأدوية', 'الدعم النفسي'], availability: 'offline', reviews: [{reviewer: 'عائلة حمد', comment: 'أكثر من رائع، شكراً لجهودك.', rating: 5}] },
+     { id: 3, name: 'شروق صالح ', img: 'https://picsum.photos/seed/nurse3/100/100', rating: 4.7, reviewsCount: 88, specialty: 'العناية بالجروح', experience: 6, bio: 'خبيرة في العناية بمختلف أنواع الجروح، بما في ذلك جروح ما بعد العمليات والجروح المزمنة.', services: ['تغيير الضمادات', 'تنظيف الجروح', 'متابعة الشفاء'], availability: 'available', reviews: [{reviewer: 'خالد', comment: 'اهتمام كبير بالتفاصيل.', rating: 5}] },
+    { id: 4, name: 'سلطان باهبري ', img: 'https://picsum.photos/seed/nurse4/100/100', rating: 4.9, reviewsCount: 150, specialty: 'رعاية كبار السن', experience: 10, bio: 'ممرض متخصص في توفير الرعاية الشاملة والمريحة لكبار السن في بيئتهم المنزلية.', services: ['المساعدة في النظافة الشخصية', 'إدارة الأدوية', 'الدعم النفسي'], availability: 'offline', reviews: [{reviewer: 'عائلة حمد', comment: 'أكثر من رائع، شكراً لجهودك.', rating: 5}] },
     { id: 5, name: 'فاطمة الزهراني', img: 'https://picsum.photos/seed/nurse5/100/100', rating: 4.6, reviewsCount: 72, specialty: 'رعاية أطفال', experience: 4, bio: 'ممرضة أطفال محبة لعملها، أقدم رعاية آمنة وموثوقة للأطفال وحديثي الولادة.', services: ['رعاية حديثي الولادة', 'إعطاء التطعيمات', 'متابعة النمو'], availability: 'busy', waitTime: 20, reviews: [{reviewer: 'أم سارة', comment: 'لطيفة جداً مع الأطفال.', rating: 5}] },
 ];
 
