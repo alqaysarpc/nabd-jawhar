@@ -25,7 +25,7 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ onLogout, onEditProfile, 
     return (
         <div className="p-4 md:p-6 lg:p-8 space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-6 lg:gap-8 md:items-start">
             <div className="md:col-span-1 flex flex-col items-center p-6 bg-white rounded-lg shadow-sm border">
-                <img src="https://picsum.photos/seed/avatar/100/100" alt="Profile" className="w-24 h-24 rounded-full mb-4" />
+                <img src="/9.png" alt="Profile" className="w-24 h-24 rounded-full mb-4" />
                 <h2 className="text-xl font-bold text-gray-800">خولة بارجاش </h2>
                 <p className="text-gray-500">khawla@gmail.com</p>
             </div>

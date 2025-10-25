@@ -41,8 +41,8 @@ const EditAddressScreen: React.FC<EditAddressScreenProps> = ({ address, onBack, 
 
             <div className="flex-grow overflow-y-auto p-4 md:p-6 lg:p-8 flex flex-col items-center">
                 <form className="bg-white p-4 md:p-6 rounded-lg shadow-sm border space-y-4 text-right w-full max-w-lg">
-                    <InputField label="المدينة" value={city} onChange={(e) => setCity(e.target.value)} placeholder="مثال: الرياض" />
-                    <InputField label="الحي" value={neighborhood} onChange={(e) => setNeighborhood(e.target.value)} placeholder="مثال: حي الياسمين" />
+                    <InputField label="المدينة" value={city} onChange={(e) => setCity(e.target.value)} placeholder="مثال: المكلا" />
+                    <InputField label="الحي" value={neighborhood} onChange={(e) => setNeighborhood(e.target.value)} placeholder="مثال: حي السلام" />
                     <InputField label="العنوان التفصيلي" value={details} onChange={(e) => setDetails(e.target.value)} placeholder="اسم الشارع، رقم المبنى..." />
                     
                     <button type="button" className="w-full flex items-center justify-center gap-2 bg-sky-100 text-sky-700 py-2.5 mt-4 rounded-lg font-semibold hover:bg-sky-200 transition">

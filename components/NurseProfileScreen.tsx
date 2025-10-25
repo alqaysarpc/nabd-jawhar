@@ -30,7 +30,7 @@ const mockNurseProfiles: DetailedNurse[] = [
     { 
         id: 1, 
         name: 'وليد بن قبوس ', 
-        img: 'https://picsum.photos/seed/nurse1/100/100', 
+        img: '/1.png', 
         rating: 4.9, 
         reviewsCount: 120,
         specialty: 'خدمات التمريض ', 
@@ -46,7 +46,7 @@ const mockNurseProfiles: DetailedNurse[] = [
     { 
         id: 2, 
         name: 'ماريا باجبير ', 
-        img: 'https://picsum.photos/seed/nurse2/100/100', 
+        img: '/2.png', 
         rating: 4.8, 
         reviewsCount: 95,
         specialty: 'رعاية أمراض مزمنة', 
@@ -59,9 +59,15 @@ const mockNurseProfiles: DetailedNurse[] = [
             { reviewer: 'سالم', comment: 'ممرضة رائعة وصبورة.', rating: 5 },
         ]
     },
-     { id: 3, name: 'شروق صالح ', img: 'https://picsum.photos/seed/nurse3/100/100', rating: 4.7, reviewsCount: 88, specialty: 'العناية بالجروح', experience: 6, bio: 'خبيرة في العناية بمختلف أنواع الجروح، بما في ذلك جروح ما بعد العمليات والجروح المزمنة.', services: ['تغيير الضمادات', 'تنظيف الجروح', 'متابعة الشفاء'], availability: 'available', reviews: [{reviewer: 'خالد', comment: 'اهتمام كبير بالتفاصيل.', rating: 5}] },
-    { id: 4, name: 'سلطان باهبري ', img: 'https://picsum.photos/seed/nurse4/100/100', rating: 4.9, reviewsCount: 150, specialty: 'رعاية كبار السن', experience: 10, bio: 'ممرض متخصص في توفير الرعاية الشاملة والمريحة لكبار السن في بيئتهم المنزلية.', services: ['المساعدة في النظافة الشخصية', 'إدارة الأدوية', 'الدعم النفسي'], availability: 'offline', reviews: [{reviewer: 'عائلة حمد', comment: 'أكثر من رائع، شكراً لجهودك.', rating: 5}] },
-    { id: 5, name: 'فاطمة الزهراني', img: 'https://picsum.photos/seed/nurse5/100/100', rating: 4.6, reviewsCount: 72, specialty: 'رعاية أطفال', experience: 4, bio: 'ممرضة أطفال محبة لعملها، أقدم رعاية آمنة وموثوقة للأطفال وحديثي الولادة.', services: ['رعاية حديثي الولادة', 'إعطاء التطعيمات', 'متابعة النمو'], availability: 'busy', waitTime: 20, reviews: [{reviewer: 'أم سارة', comment: 'لطيفة جداً مع الأطفال.', rating: 5}] },
+    { id: 3, name: 'شروق صالح ', img: '/3.png', rating: 4.7, reviewsCount: 88, specialty: 'العناية بالجروح', experience: 6, bio: 'خبيرة في العناية بمختلف أنواع الجروح، بما في ذلك جروح ما بعد العمليات والجروح المزمنة.', services: ['تغيير الضمادات', 'تنظيف الجروح', 'متابعة الشفاء'], availability: 'available', reviews: [{reviewer: 'خالد', comment: 'اهتمام كبير بالتفاصيل.', rating: 5}] },
+    { id: 4, name: 'سلطان باهبري ', img: '/4.png', rating: 4.9, reviewsCount: 150, specialty: 'رعاية كبار السن', experience: 10, bio: 'ممرض متخصص في توفير الرعاية الشاملة والمريحة لكبار السن في بيئتهم المنزلية.', services: ['المساعدة في النظافة الشخصية', 'إدارة الأدوية', 'الدعم النفسي'], availability: 'offline', reviews: [{reviewer: 'عائلة حمد', comment: 'أكثر من رائع، شكراً لجهودك.', rating: 5}] },
+    { id: 5, name: 'جنى القعيطي ', img: '/6.png', rating: 4.6, reviewsCount: 72, specialty: 'رعاية أطفال', experience: 4, bio: 'ممرضة أطفال محبة لعملها، أقدم رعاية آمنة وموثوقة للأطفال وحديثي الولادة.', services: ['رعاية حديثي الولادة', 'إعطاء التطعيمات', 'متابعة النمو'], availability: 'busy', waitTime: 20, reviews: [{reviewer: 'أم سارة', comment: 'لطيفة جداً مع الأطفال.', rating: 5}] },
+
+    { id: 6, name: ' هبة باسلوم ', img: '/8.png', rating: 4.0, reviewsCount: 90, specialty: 'رعاية امراض مزمنة ', experience: 3, bio: 'خبيرة في العناية بمختلف أنواع الجروح، بما في ذلك جروح ما بعد العمليات والجروح المزمنة.', services: ['تغيير الضمادات', 'تنظيف الجروح', 'متابعة الشفاء'], availability: 'available', reviews: [{reviewer: 'خالد', comment: 'اهتمام كبير بالتفاصيل.', rating: 5}] },
+    { id: 7, name: ' خولة الزبيدي ', img: '/5.png', rating: 4.7, reviewsCount: 110, specialty: 'رعاية امراض الحروق  ', experience: 5, bio: 'ممرض متخصص في توفير الرعاية الشاملة والمريحة لكبار السن في بيئتهم المنزلية.', services: ['المساعدة في النظافة الشخصية', 'إدارة الأدوية', 'الدعم النفسي'], availability: 'offline', reviews: [{reviewer: 'عائلة حمد', comment: 'أكثر من رائع، شكراً لجهودك.', rating: 5}] },
+    { id: 8, name: 'جنى بن ماضي ', img: '/7.png', rating: 4.6, reviewsCount: 99, specialty: 'رعاية اطفال ', experience: 4, bio: 'ممرضة أطفال محبة لعملها، أقدم رعاية آمنة وموثوقة للأطفال وحديثي الولادة.', services: ['رعاية حديثي الولادة', 'إعطاء التطعيمات', 'متابعة النمو'], availability: 'busy', waitTime: 20, reviews: [{reviewer: 'أم سارة', comment: 'لطيفة جداً مع الأطفال.', rating: 5}] },
+
+    
 ];
 
 

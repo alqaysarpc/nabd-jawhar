@@ -9,8 +9,8 @@ interface RatingModalProps {
 
 // Mock data to fetch nurse details based on orderId
 const mockOrderDetails = {
-    1: { nurseName: 'نورة محمد', nurseImg: 'https://picsum.photos/seed/nurse2/80/80', serviceName: 'قياس السكر بالدم' },
-    4: { nurseName: 'سارة عبدالله', nurseImg: 'https://picsum.photos/seed/nurse3/80/80', serviceName: 'تغيير على جرح' }
+    1: { nurseName: 'ماريا باجبير ', nurseImg: '/2.png', serviceName: 'قياس السكر بالدم' },
+    4: { nurseName: ' شروق صالح', nurseImg: '/3.png', serviceName: 'تغيير على جرح' }
 };
 
 const RatingModal: React.FC<RatingModalProps> = ({ orderId, onClose, onSubmit }) => {

@@ -64,7 +64,7 @@ const HelpAndSupportScreen: React.FC<HelpAndSupportScreenProps> = ({ onBack }) =
                      <h2 className="text-lg font-bold text-gray-800 mb-2">هل تحتاج للمزيد من المساعدة؟</h2>
                      <p className="text-sm text-gray-600 mb-4">تواصل معنا مباشرة عبر القنوات التالية:</p>
                      <div className="space-y-2">
-                        <a href="tel:9200XXXXX" className="block font-semibold text-cyan-600">اتصل بنا: 9200XXXXX</a>
+                        <a href="tel:9200XXXXX" className="block font-semibold text-cyan-600">اتصل بنا: 967 775258830</a>
                         <a href="mailto:support@nabdhjwar.com" className="block font-semibold text-cyan-600">البريد الإلكتروني: support@nabdhjwar.com</a>
                      </div>
                 </div>

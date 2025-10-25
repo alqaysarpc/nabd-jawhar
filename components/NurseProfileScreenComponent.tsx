@@ -47,8 +47,8 @@ const NurseProfileScreenComponent: React.FC<NurseProfileScreenComponentProps> = 
     return (
         <div className="p-4 md:p-6 lg:p-8 space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-6 lg:gap-8 md:items-start">
             <div className="md:col-span-1 flex flex-col items-center p-6 bg-white rounded-lg shadow-sm border">
-                <img src="https://picsum.photos/seed/nurse5/100/100" alt="Profile" className="w-24 h-24 rounded-full mb-4" />
-                <h2 className="text-xl font-bold text-gray-800">فاطمة الزهراني</h2>
+                <img src="/9.png" alt="Profile" className="w-24 h-24 rounded-full mb-4" />
+                <h2 className="text-xl font-bold text-gray-800">خولة بارجاش </h2>
                 <p className="text-gray-500">ممرضة أطفال</p>
                 <div className="flex items-center justify-center gap-2 mt-2">
                     <StarIcon className="w-5 h-5 text-yellow-400" />

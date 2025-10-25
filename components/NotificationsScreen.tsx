@@ -15,14 +15,14 @@ const mockNotifications: Notification[] = [
         id: 1,
         type: 'order_update',
         title: 'تم قبول طلبك!',
-        description: 'الممرض أحمد خالد في طريقه إليك. رقم الطلب #2.',
+        description: 'الممرض سلطان باهبري  في طريقه إليك. رقم الطلب #2.',
         isRead: false,
     },
     {
         id: 2,
         type: 'payment',
         title: 'الدفع ناجح',
-        description: 'تم استلام 80 ر.س بنجاح لخدمة قياس السكر.',
+        description: 'تم استلام 80 ر.ي بنجاح لخدمة قياس السكر.',
         isRead: false,
     },
     {
@@ -45,6 +45,13 @@ const mockNotifications: Notification[] = [
         title: 'عرض خاص لك!',
         description: 'احصل على خصم 15% على خدمة الرعاية الشاملة القادمة.',
         isRead: true,
+    },
+     {
+        id: 6,
+        type: 'order_update',
+        title: 'اكتمل طلبك',
+        description: 'تم إكمال خدمة رعاية الجروح  بنجاح. نتمنى لك دوام الصحة.',
+        isRead: false,
     },
 ];
 

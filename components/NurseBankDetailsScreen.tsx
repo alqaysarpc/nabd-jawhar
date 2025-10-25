@@ -22,9 +22,9 @@ const InputField = ({ label, value, onChange, placeholder }: { label: string, va
 );
 
 const NurseBankDetailsScreen: React.FC<NurseBankDetailsScreenProps> = ({ onBack, onSave }) => {
-    const [accountHolder, setAccountHolder] = useState('فاطمة علي الزهراني');
-    const [iban, setIban] = useState('SA******************1234');
-    const [bankName, setBankName] = useState('البنك الأهلي السعودي');
+    const [accountHolder, setAccountHolder] = useState(' خولة بارجاش ');
+    const [iban, setIban] = useState('YE******************1234');
+    const [bankName, setBankName] = useState('البنك اليمني ');
 
     return (
         <div className="flex flex-col h-full bg-gray-50">

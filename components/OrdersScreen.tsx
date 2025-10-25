@@ -18,10 +18,10 @@ interface OrdersScreenProps {
 }
 
 const mockOrders: Order[] = [
-    { id: 1, service: 'قياس السكر بالدم', nurse: 'نورة محمد', date: '2024-07-25', status: 'completed' },
-    { id: 2, service: 'إعطاء حقنة عضل', nurse: 'أحمد خالد', date: '2024-07-28', status: 'accepted' },
+    { id: 1, service: 'قياس السكر بالدم', nurse: 'ماريا باجبير ', date: '2024-07-25', status: 'completed' },
+    { id: 2, service: 'إعطاء حقنة عضل', nurse: 'وليد بن قبوس ', date: '2024-07-28', status: 'accepted' },
     { id: 3, service: 'رعاية ما بعد الجراحة', nurse: 'في انتظار القبول', date: '2024-08-01', status: 'pending' },
-    { id: 4, service: 'تغيير على جرح', nurse: 'سارة عبدالله', date: '2024-07-22', status: 'completed' },
+    { id: 4, service: 'تغيير على جرح', nurse: 'شروق صالح ', date: '2024-07-22', status: 'completed' },
 ];
 
 const statusStyles: { [key in Status]: { text: string; bg: string; label: string } } = {

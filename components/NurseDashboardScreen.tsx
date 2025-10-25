@@ -49,7 +49,7 @@ const NurseDashboardScreen: React.FC<NurseDashboardScreenProps> = ({
         <div className="p-4 md:p-6 space-y-6 md:space-y-8 bg-gray-50">
             {/* Header */}
             <div>
-                <h1 className="text-2xl font-bold text-gray-800">أهلاً بك، فاطمة</h1>
+                <h1 className="text-2xl font-bold text-gray-800">أهلاً بك، خولة</h1>
                 <p className="text-gray-500">لديك {newRequests.length} طلبات جديدة اليوم.</p>
             </div>
             

@@ -30,11 +30,11 @@ const allServicesData: Service[] = [
 ];
 
 const mockNurses: Nurse[] = [
-    { id: 1, name: 'أحمد خالد', img: 'https://picsum.photos/seed/nurse1/100/100', rating: 4.9, specialty: 'خدمات التمريض العامة', experience: 7, availability: 'available', languages: ['العربية', 'الإنجليزية'], arrivalTime: 25 },
-    { id: 2, name: 'نورة محمد', img: 'https://picsum.photos/seed/nurse2/100/100', rating: 4.8, specialty: 'رعاية أمراض مزمنة', experience: 5, availability: 'busy', languages: ['العربية'], arrivalTime: 45 },
-    { id: 3, name: 'سارة عبدالله', img: 'https://picsum.photos/seed/nurse3/100/100', rating: 4.7, specialty: 'العناية بالجروح', experience: 6, availability: 'available', languages: ['العربية'], arrivalTime: 15 },
-    { id: 4, name: 'خالد الغامدي', img: 'https://picsum.photos/seed/nurse4/100/100', rating: 4.9, specialty: 'رعاية كبار السن', experience: 10, availability: 'offline', languages: ['العربية', 'الإنجليزية'], arrivalTime: 0 },
-    { id: 5, name: 'فاطمة الزهراني', img: 'https://picsum.photos/seed/nurse5/100/100', rating: 4.6, specialty: 'رعاية أطفال', experience: 4, availability: 'available', languages: ['العربية'], arrivalTime: 35 },
+    { id: 1, name: 'وليد بن قبوس', img: '/1.png', rating: 4.9, specialty: 'خدمات التمريض العامة', experience: 7, availability: 'available', languages: ['العربية', 'الإنجليزية'], arrivalTime: 25 },
+    { id: 2, name: ' ماريا باجبير', img: '/2.png', rating: 4.8, specialty: 'رعاية أمراض مزمنة', experience: 5, availability: 'busy', languages: ['العربية'], arrivalTime: 45 },
+    { id: 3, name: 'شروق صالح ', img: '/3.png', rating: 4.7, specialty: 'العناية بالجروح', experience: 6, availability: 'available', languages: ['العربية'], arrivalTime: 15 },
+    { id: 4, name: 'سلطان باهبري ', img: '/4.png', rating: 4.9, specialty: 'رعاية كبار السن', experience: 10, availability: 'offline', languages: ['العربية', 'الإنجليزية'], arrivalTime: 0 },
+    { id: 5, name: 'جنى القعيطي ', img: '/6.png', rating: 4.6, specialty: 'رعاية أطفال', experience: 4, availability: 'available', languages: ['العربية'], arrivalTime: 35 },
 ];
 
 interface BookingConfirmationScreenProps {

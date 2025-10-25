@@ -13,14 +13,15 @@ interface NursesScreenProps {
 }
 
 const mockNurses: Nurse[] = [
-    { id: 1, name: 'جنى بن ماضي', img: 'https://picsum.photos/seed/nurse5/100/100', rating: 4.6, specialty: 'رعاية أطفال', experience: 4, availability: 'busy', languages: ['العربية'] },
-    { id: 2, name: 'وليد بن قبوس', img: 'https://picsum.photos/seed/nurse1/100/100', rating: 4.9, specialty: 'خدمات التمريض ', experience: 7, availability: 'available', languages: ['العربية', 'الإنجليزية'] },
-    { id: 3, name: 'ماريا باجبير', img: 'https://picsum.photos/seed/nurse2/100/100', rating: 4.8, specialty: 'رعاية أمراض مزمنة', experience: 5, availability: 'busy', languages: ['العربية'] },
-    { id: 4, name: 'شروق صالح', img: 'https://picsum.photos/seed/nurse3/100/100', rating: 4.7, specialty: 'العناية بالجروح', experience: 6, availability: 'available', languages: ['العربية'] },
-    { id: 5, name: 'سلطان باهبري', img: 'https://picsum.photos/seed/nurse4/100/100', rating: 4.9, specialty: 'رعاية كبار السن', experience: 10, availability: 'offline', languages: ['العربية', 'الإنجليزية'] },
-    { id: 6, name: 'جنى القعيطي', img: 'https://picsum.photos/seed/nurse5/100/100', rating: 4.6, specialty: 'رعاية أطفال', experience: 4, availability: 'busy', languages: ['العربية'] },
-    { id: 7, name: 'ماريا هبة باسلوم', img: 'https://picsum.photos/seed/nurse2/100/100', rating: 4.0, specialty: 'رعاية أمراض مزمنة', experience: 3, availability: 'busy', languages: ['العربية'] },
-    { id: 7, name: 'خولة الزبيدي', img: 'https://picsum.photos/seed/nurse2/100/100', rating: 4.7, specialty: 'رعاية أمراض الحروق', experience: 5, availability: 'busy', languages: ['العربية'] }
+    { id: 1, name: 'وليد بن قبوس', img: '/1.png', rating: 4.9, specialty: 'خدمات التمريض ', experience: 7, availability: 'available', languages: ['العربية', 'الإنجليزية'] },
+    { id: 2, name: 'ماريا باجبير', img: '/2.png', rating: 4.8, specialty: 'رعاية أمراض مزمنة', experience: 5, availability: 'busy', languages: ['العربية'] },
+    { id: 3, name: 'شروق صالح', img: '/3.png', rating: 4.7, specialty: 'العناية بالجروح', experience: 6, availability: 'available', languages: ['العربية'] },
+    { id: 4, name: 'سلطان باهبري', img: '/4.png', rating: 4.9, specialty: 'رعاية كبار السن', experience: 10, availability: 'offline', languages: ['العربية', 'الإنجليزية'] },
+    { id: 5, name: 'جنى القعيطي', img: '/6.png', rating: 4.6, specialty: 'رعاية أطفال', experience: 4, availability: 'busy', languages: ['العربية'] },
+    { id: 6, name: ' هبة باسلوم', img: '/8.png', rating: 4.0, specialty: 'رعاية أمراض مزمنة', experience: 3, availability: 'busy', languages: ['العربية'] },
+    { id: 7, name: 'خولة الزبيدي', img: '/5.png', rating: 4.7, specialty: 'رعاية أمراض الحروق', experience: 5, availability: 'busy', languages: ['العربية'] },
+    { id: 8, name: 'جنى بن ماضي', img: '/7.png', rating: 4.6, specialty: 'رعاية أطفال', experience: 4, availability: 'busy', languages: ['العربية'] },
+
 
 
 ];

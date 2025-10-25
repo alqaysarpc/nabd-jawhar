@@ -39,9 +39,9 @@ const SignUpUserScreen: React.FC<SignUpUserScreenProps> = ({ onBack, onSignUpSuc
           alert('تم تحديد موقعك بنجاح! سيتم ملء حقول العنوان بالبيانات التقريبية.');
           setFormData(prev => ({
             ...prev,
-            city: 'صنعاء',
-            district: 'حي التحرير',
-            address: 'شارع الزبيري، بالقرب من ميدان التحرير',
+            city: 'المكلا',
+            district: 'حي السشهيد',
+            address: 'الشارع العام، بالقرب من بقاله الخير',
           }));
         },
         (error) => {

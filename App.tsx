@@ -30,6 +30,8 @@ import RatingModal from './components/RatingModal';
 import CancellationModal from './components/CancellationModal';
 import NurseTrackingScreen from './components/NurseTrackingScreen';
 import LoginPromptModal from './components/LoginPromptModal';
+import 'leaflet/dist/leaflet.css';
+
 
 import NurseMainLayout from './components/NurseMainLayout';
 import NurseDashboardScreen from './components/NurseDashboardScreen';
@@ -50,11 +52,11 @@ import { Role, MainTab, NurseTab, BookingConfirmationDetails, JobRequest, Availa
 
 // Mock Data
 const mockJobRequests: JobRequest[] = [
-    { id: 1, service: 'قياس السكر بالدم', serviceDescription: 'فحص مستوى السكر في الدم', patientName: 'خالد عبدالعزيز', location: 'حي التحرير', time: 'فوري', price: 5000, isUrgent: true, status: 'new', date: '2024-08-05', patientInfo: { age: 65, gender: 'ذكر' }, patientCount: 1, address: 'حي التحرير، شارع الزبيري، صنعاء' },
-    { id: 2, service: 'العناية بالجروح', serviceDescription: 'تغيير ضماد جرح قدم', patientName: 'سارة الفيصل', location: 'حي السبعين', time: '04:00 م', price: 10000, isUrgent: false, status: 'new', date: '2024-08-05', patientInfo: { age: 40, gender: 'أنثى' }, patientCount: 1, address: 'حي السبعين، شارع 22 مايو، صنعاء' },
-    { id: 98, service: 'العناية بالجروح', patientName: 'محمد علي', location: 'حي معين', time: '02:00 م', price: 8000, isUrgent: false, status: 'accepted', date: new Date().toISOString().split('T')[0], serviceDescription: 'وصف الخدمة هنا', patientInfo: { age: 50, gender: 'ذكر' }, patientCount: 1, address: 'حي معين' },
-    { id: 99, service: 'رعاية كبار السن', patientName: 'فاطمة عبدالله', location: 'حدة', time: '05:30 م', price: 12000, isUrgent: false, status: 'accepted', date: new Date().toISOString().split('T')[0], serviceDescription: 'وصف الخدمة هنا', patientInfo: { age: 80, gender: 'أنثى' }, patientCount: 1, address: 'حدة' },
-    { id: 100, service: 'إعطاء حقنة عضل', patientName: 'أحمد الصالح', location: 'حي الصافية', time: '09:00 ص', price: 4000, isUrgent: false, status: 'completed', date: '2024-08-04', serviceDescription: 'وصف الخدمة هنا', patientInfo: { age: 30, gender: 'ذكر' }, patientCount: 1, address: 'حي الصافية' },
+    { id: 1, service: 'قياس السكر بالدم', serviceDescription: 'فحص مستوى السكر في الدم', patientName: 'خالد عبدالعزيز', location: 'حي الخزان', time: 'فوري', price: 5000, isUrgent: true, status: 'new', date: '2024-08-05', patientInfo: { age: 65, gender: 'ذكر' }, patientCount: 1, address: 'حي الخزان، الشارع العام  ' },
+    { id: 2, service: 'العناية بالجروح', serviceDescription: 'تغيير ضماد جرح قدم', patientName: 'سارة الفيصل', location: 'حي المساكن', time: '04:00 م', price: 10000, isUrgent: false, status: 'new', date: '2024-08-05', patientInfo: { age: 40, gender: 'أنثى' }, patientCount: 1, address: 'مقابل بيتزاء هاوس ' },
+    { id: 98, service: 'العناية بالجروح', patientName: 'محمد علي', location: 'حي الثورة', time: '02:00 م', price: 8000, isUrgent: false, status: 'accepted', date: new Date().toISOString().split('T')[0], serviceDescription: 'وصف الخدمة هنا', patientInfo: { age: 50, gender: 'ذكر' }, patientCount: 1, address: 'مقبل مسجد الصفاء ' },
+    { id: 99, service: 'رعاية كبار السن', patientName: 'فاطمة عبدالله', location: 'فوة الانشاءات', time: '05:30 م', price: 12000, isUrgent: false, status: 'accepted', date: new Date().toISOString().split('T')[0], serviceDescription: 'وصف الخدمة هنا', patientInfo: { age: 80, gender: 'أنثى' }, patientCount: 1, address: 'مقابل رئاسة الجامعة' },
+    { id: 100, service: 'إعطاء حقنة عضل', patientName: 'أحمد الصالح', location: 'الديس ', time: '09:00 ص', price: 4000, isUrgent: false, status: 'completed', date: '2024-08-04', serviceDescription: 'وصف الخدمة هنا', patientInfo: { age: 30, gender: 'ذكر' }, patientCount: 1, address: 'مقابل ادارة المياة ' },
 ];
 
 const mockReviews: Review[] = [
@@ -105,8 +107,8 @@ const App: React.FC = () => {
     const [isAvailabilityModalOpen, setAvailabilityModalOpen] = useState(false);
     const [nurseRequests, setNurseRequests] = useState<JobRequest[]>(mockJobRequests);
     const [nurseRequestFilter, setNurseRequestFilter] = useState<"new" | "accepted" | "completed" | "all">('all');
-    const [userAddress, setUserAddress] = useState({ city: 'صنعاء', neighborhood: 'حي التحرير', details: 'شارع الزبيري، مبنى 123' });
-    const [nurseAddress, setNurseAddress] = useState({ city: 'صنعاء', neighborhood: 'حي السبعين', details: 'شارع 22 مايو، مبنى 456' });
+    const [userAddress, setUserAddress] = useState({ city: 'المكلا', neighborhood: 'حي السكنه', details: 'الشارع الاول، مبنى 123' });
+    const [nurseAddress, setNurseAddress] = useState({ city: 'المكلا', neighborhood: 'حي السلام', details: 'سكة يعقوب، مبنى 456' });
 
     useEffect(() => {
         if (view.name === 'splash') {

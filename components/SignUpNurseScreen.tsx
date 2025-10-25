@@ -79,9 +79,9 @@ const SignUpNurseScreen: React.FC<SignUpNurseScreenProps> = ({ onBack, onSignUpS
           alert('تم تحديد موقعك بنجاح! سيتم ملء حقول العنوان بالبيانات التقريبية.');
           setFormData(prev => ({
             ...prev,
-            city: 'صنعاء',
-            district: 'حي معين',
-            address: 'شارع تعز، بالقرب من مستشفى الثورة',
+            city: 'الديس',
+            district: 'حي اكتوبر',
+            address: 'شارع باسويد، بالقرب من مستشفى البرج',
           }));
         },
         (error) => {
