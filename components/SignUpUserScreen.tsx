@@ -141,11 +141,11 @@ const SignUpUserScreen: React.FC<SignUpUserScreenProps> = ({ onBack, onSignUpSuc
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label htmlFor="city" className="text-sm font-medium text-gray-700 mb-1 block">المدينة</label>
-                <input id="city" name="city" type="text" value={formData.city} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 transition" placeholder="صنعاء" required />
+                <input id="city" name="city" type="text" value={formData.city} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 transition" placeholder="المدينة" required />
               </div>
               <div>
                 <label htmlFor="district" className="text-sm font-medium text-gray-700 mb-1 block">الحي</label>
-                <input id="district" name="district" type="text" value={formData.district} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 transition" placeholder="حي التحرير" required />
+                <input id="district" name="district" type="text" value={formData.district} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 transition" placeholder="الحي" required />
               </div>
             </div>
             <div>
