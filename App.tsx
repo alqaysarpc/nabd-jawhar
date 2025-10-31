@@ -47,6 +47,8 @@ import NurseBankDetailsScreen from './components/NurseBankDetailsScreen';
 import NurseEditAddressScreen from './components/NurseEditAddressScreen';
 import AdminLayout from './components/admin/AdminLayout';
 import AuthBranding from './components/AuthBranding';
+import AdminDashboard from './components/AdminDashboard';
+
 
 import { Role, MainTab, NurseTab, BookingConfirmationDetails, JobRequest, AvailabilityStatus, Review } from './types';
 
@@ -165,11 +167,11 @@ const App: React.FC = () => {
     };
     
     const renderAdminView = () => {
-        if (view.name === 'admin_main') {
-            return <AdminLayout onLogout={handleLogout} />;
-        }
-        return null;
+    if (view.name === 'admin_main') {
+        return <AdminDashboard onLogout={handleLogout} />;
     }
+    return null;
+    };
 
 
     const renderUserView = () => {
